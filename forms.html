@@ -1,15 +1,19 @@
+
 <!DOCTYPE html>
-<html>
+<html lang="en">
     <head>
         <title>
             forms demo
         </title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link href="css/style.css" rel="stylesheet">
     </head>
     <body>
         <h1>
            REGISTER ONLINE!
         </h1>
-        <form action="/action.php">
+        <form target="disp.html">
             <label for="name">Enter your name:</label>
             <input type="text" id="name" name="name"><br>
 
@@ -17,7 +21,7 @@
             <input type="number" id="number" name="number"><br>
             <br><br>
 
-            <label for="courseChoice">Select your course choice:</label><br>
+            <label >Select your course choice:</label><br>
             <label for="undergrad">BACHELORS</label>
             <input type="radio" id="undergrad" name="courseChoice"><br>
             <label for="postgrad">MASTERS</label>
@@ -27,7 +31,7 @@
             <input type="text" id="description" value="Enter a little description" ><br>
             <br><br>
 
-            <label for="course">subject interests:</label><br>
+            <label >subject interests:</label><br>
             <input type="checkbox" id="ml" name="course" value="ml">
             <label for="ml">Machine Learning</label><br>
             <input type="checkbox" id="finance" name="course" value="finance">
