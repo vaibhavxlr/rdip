@@ -12,12 +12,27 @@
         <form action="/action.php">
             <label for="name">Enter your name:</label>
             <input type="text" id="name" name="name"><br>
-            <label for="course">Enter your favorite course:</label><br>
-            <input type="radio" id="ml" name="course" value="ml">
+
+            <label for="number">Enter your number:</label>
+            <input type="number" id="number" name="number"><br>
+            <br><br>
+
+            <label for="courseChoice">Select your course choice:</label><br>
+            <label for="undergrad">BACHELORS</label>
+            <input type="radio" id="undergrad" name="courseChoice"><br>
+            <label for="postgrad">MASTERS</label>
+            <input type="radio" id="postgrad" name="courseChoice"><br>
+            <br><br>
+
+            <input type="text" id="description" value="Enter a little description" ><br>
+            <br><br>
+
+            <label for="course">subject interests:</label><br>
+            <input type="checkbox" id="ml" name="course" value="ml">
             <label for="ml">Machine Learning</label><br>
-            <input type="radio" id="finance" name="course" value="finance">
+            <input type="checkbox" id="finance" name="course" value="finance">
             <label for="finance">Financial Markets</label><br>
-            <input type="radio" id="dsa" name="course" value="dsas">
+            <input type="checkbox" id="dsa" name="course" value="dsas">
             <label for="dsa">Data Structures and Algorithms</label><br>
             <input type="submit" value="Submit">
         </form>
