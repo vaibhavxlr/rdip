@@ -5,15 +5,98 @@
         <style> 
         .hehe {
             border:5px;
-            background-color:lightblue;
-            text-align:center;
+            background-image:url("himym.jpeg");
+            text-align:left;
+            font-family:Arial, Helvetica, sans-serif;
+            color:white;
+            font-weight: 200;
+            font-style:italic;
+            margin-top: auto;
+            margin-left: 0px;
+            margin-right: auto;
+            position: fixed;;
+            
+
         }
 
         .lol {
+            font-weight: bolder;
+            font-style: oblique;
             border:10px;
-            background-color:red;
-            text-align:left;
+            background-image:url("tim.jpg");
+            text-align:center;
+            font-family:'Courier New', Courier, monospace;
+            color:black;
+            margin-top: auto;
+            margin-left: 0px;
+            margin-right: auto;
+
         }
+
+        h2 {
+            color:violet;
+            font-size: medium;
+        }
+
+        ol.a{
+            list-style-type:upper-roman;
+            list-style-position: inside ;
+        }
+
+        ol {
+            background: seagreen;
+            padding:15px;
+        }
+
+        ol li {
+            background: seashell;
+            padding:5px;
+            
+        }
+
+        ul {
+             padding-left:20px;
+             padding-right: 20px;
+             padding-bottom: 10px;
+        }
+        ul li {
+            background: yellow;
+         
+            
+        }
+        a {
+            color:gray;
+        }
+        a:link {
+            color:navajowhite;
+        }
+
+        a:active {
+            color:white;
+        }
+ 
+    
+        a:hover {
+            color:darkgoldenrod;
+        }
+
+        table.pp {
+            outline-style: dashed;
+            outline-color: black;
+            position: fixed;
+            bottom: 0;
+            right: 0;
+            width: 300px;
+            border: 3px solid #73AD21;
+            
+        }
+
+        h2 {
+            display:none;
+        }
+
+  
+       
         </style>
     </head>
     
@@ -23,7 +106,7 @@
                 COURSES FINISHED
             </h2>
             <p1>
-                <ol>
+                <ol class="a">
                     <li> <a href="https://www.coursera.org/learn/linear-algebra-machine-learning/home/welcome">MATHS OF ML</a>
                         
                          <UL>
@@ -37,7 +120,7 @@
                     </li>
                     <li> <a href="https://www.coursera.org/specializations/machine-learning-reinforcement-finance">ML IN FINANCE</a>
                         
-                         <UL>
+                         <ul class = "b">
                              <li>
                                  CAPM MODEL
                              </li>
@@ -65,7 +148,7 @@
        
 
         <div class="hehe">
-            <table>
+            <table class="pp">
                 <tr>
                     <th>
                       subject  
