@@ -1,0 +1,165 @@
+<<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>registration</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <style>
+            img.p {
+                display:inline-block;
+                margin-left: 0px;
+                padding-block-start: 5px;
+                width: 200px;
+            }
+            h2 {
+                display: inline-block;
+                position: absolute;
+                top:0;
+                right:10px;
+            }
+            ul.nav {
+                list-style-type: none;
+                margin:0;
+                padding:0;
+                overflow: hidden;
+                background-color:black;
+            }
+
+            li {
+                float:left;
+            }
+
+            li a {
+                
+                display: block;
+                color:white;
+                text-align: center;
+                padding:14px 16px;
+                text-decoration: none;
+                
+            }
+            li a:hover {
+                color:gray;
+            }
+
+            form {
+                position:fixed;
+                margin-left: 20%;
+            }
+            input[type=text] {
+               /* position: fixed;
+               margin-left: 50%;*/
+                border: 2px solid #cccccc;
+                border-radius: 4px;
+            }
+            input[type=email] {
+               /* position: fixed;
+               margin-left: 50%; */
+                border: 2px solid  #cccccc;
+                border-radius: 4px;
+            }
+            
+            label {
+                font-family: Georgia, 'Times New Roman', Times, serif;
+                font-weight: bolder;
+               /* position: fixed;
+                margin-left: 20%; */
+            }
+
+        </style>
+    </head>
+    <body>
+    <a href="https://www.iiit.ac.in/">
+        <img src="iiit-new.png" class = "p">
+    </a>
+    
+    <h2>
+        <a href="https://serc.iiit.ac.in/rdip">RDIP</a>
+    </h2>
+    <br>
+    <br>
+    <ul class = "nav">
+        <li>
+            <a href = "homepage.html" class = "navb">Home</a>
+        </li>
+        <li>
+            <a href = "registration.html" class = "navb">Registration Form</a>
+        </li>
+    </ul>
+        <br>
+        <br>
+    
+        <form action="details.html">
+        
+        <label for="fname">First Name:</label>
+        &emsp;
+        &emsp;
+        &emsp;
+        <input type="text" name="fname">
+        <br>
+        <br>
+        &numsp;
+        <label for="email">Email:</label>
+        &emsp;
+        &emsp;
+        &emsp;
+        &emsp;
+        &numsp;
+        <input type="email" name="email">
+        <br>
+        <br>
+        <label for="phone">Phone No:</label>
+        &emsp;
+        &emsp;
+        &emsp;
+        &numsp;
+        <input type="text" name="phone">
+        <br>
+        <br>
+        <label for="gender">Gender:</label>
+        &emsp;
+        &emsp;
+        &emsp;
+        <input type="radio" name="gender">
+        <label for="gender">Male</label>
+        <input type="radio" name="gender">
+        <label for="gender">Female</label>
+        <input type="radio" name="gender">
+        <label for="gender">Other</label>
+        <br>
+        <br>
+        <label for="rdip">Reason for RDIP:</label>
+        &emsp;
+        &emsp;
+        &emsp;
+        <input type="checkbox" name="rdip">
+        <label for="gender">HTML</label>
+        <input type="checkbox" name="rdip">
+        <label for="gender">CSS</label>
+        <input type="checkbox" name="rdip">
+        <label for="gender">JavaScript</label>
+        <br>
+        <br>
+        <label for="college">College:</label>
+        &emsp;
+        &emsp;
+        &emsp;
+        &emsp;
+        &numsp;
+        <input type="text" name="college">
+        <br>
+        <br>
+        <input type="checkbox" name="acc">
+        &emsp;
+        &emsp;
+        &emsp;
+        <label for="acc">I declare above details given by me are true.</label>
+        <br>
+        <br>
+        <input type="submit" value="Submit"> &emsp;
+        <input type="reset">
+        <br>
+        <br>
+        </form>
+    </body>
+</html>
