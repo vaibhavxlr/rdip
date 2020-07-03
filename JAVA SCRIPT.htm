@@ -14,134 +14,178 @@
     </p>
     <br>
     <br>
-    <p>
-
-    </p>
+    <p>   
+            <input type="date" id = "haha">
+            <br><br>
+            <input type="submit" onclick="fun()">
+            <br><br>
+            <input type = "text" id = "ho">
+            <br><br>
+            <button type = "submit" onclick = "checknum()">Press Here to check</button>
+        </p>
+            <p id = "output1">answer will appear here</p>
+            <p id = "output2"></p>
+   
     <script>
-        console.log("heey");
-console.log('hello')
-//in-line comment
-/*multi line comment
-dkfjd*/
+//         console.log("heey");
+// console.log('hello')
+// //in-line comment
+// /*multi line comment
+// dkfjd*/
 
-//data types
-var myName = "Vaibhav";
-myName = 8;
-//var has global scope
+// //data types
+// var myName = "Vaibhav";
+// myName = 8;
+// //var has global scope
 
-//another way to dec variable
-let ourName = "IIITH";
-//let has local scope
+// //another way to dec variable
+// let ourName = "IIITH";
+// //let has local scope
 
-const pi = 3.14;
-//const means constant
+// const pi = 3.14;
+// //const means constant
 
-var a; // declaring variable
+// var a; // declaring variable
 
-var b = 2// initialising too
+// var b = 2// initialising too
 
-console.log(a);
+// console.log(a);
 
-a = 7;
+// a = 7;
 
-b = a;
+// b = a;
 
-console.log(a);
-//outputting things on console
+// console.log(a);
+// //outputting things on console
 
-var a = 9;
-var b = 10;
-var c = "IIITH";
+// var a = 9;
+// var b = 10;
+// var c = "IIITH";
 
-a = a + 1;
-b = a + b
-c = c + " best for cs";
+// a = a + 1;
+// b = a + b
+// c = c + " best for cs";
 
-console.log(a);
-console.log(b);
-console.log(c);
+// console.log(a);
+// console.log(b);
+// console.log(c);
 
-//var names are case sensitive
-//functions too
+// //var names are case sensitive
+// //functions too
 
-a++;
-//even this works
+// a++;
+// //even this works
 
-b--; 
-//this too
+// b--; 
+// //this too
 
-var ourDec = 9.9;
+// var ourDec = 9.9;
 
-console.log(9.9 * b);
+// console.log(9.9 * b);
 
 
-console.log(11 % b);
+// console.log(11 % b);
 
-b += a + ourDec;
-c -= 1;
+// b += a + ourDec;
+// c -= 1;
 
-console.log(b);
+// console.log(b);
 
-var a = "Alan";//string
+// var a = "Alan";//string
 
-var b = "Learning how to use \"double quotes\" "
-;
-//learning to use escape seq
+// var b = "Learning how to use \"double quotes\" "
+// ;
+// //learning to use escape seq
 
-var c = 'Learning to use "single quote"';
+// var c = 'Learning to use "single quote"';
 
-var d = `Learning how to use "backtick"`;
-//we can use ' ' and ` ` for strings too
+// var d = `Learning how to use "backtick"`;
+// //we can use ' ' and ` ` for strings too
 
-console.log(d.length);
+// console.log(d.length);
 
-console.log(d[d.length - 1])
+// console.log(d[d.length - 1])
 
-var ourArray = ['John', 23];
+// var ourArray = ['John', 23];
 
-var myArray = [ourArray, ['hehe', 1], 2];
-// array of arrays of variety of elements
-console.log(myArray);
+// var myArray = [ourArray, ['hehe', 1], 2];
+// // array of arrays of variety of elements
+// console.log(myArray);
 
-myArray[0][0] = 13;
-//allowed in arrays but not strings
+// myArray[0][0] = 13;
+// //allowed in arrays but not strings
 
-console.log(myArray);
-//accessing them
+// console.log(myArray);
+// //accessing them
 
-console.log(myArray[0][1]);
+// console.log(myArray[0][1]);
 
-myArray.push(3);
+// myArray.push(3);
 
-console.log(myArray);
+// console.log(myArray);
 
-var ans = myArray.pop()
+// var ans = myArray.pop()
 
-console.log(myArray);
+// console.log(myArray);
 
- function q(arr, item) {
-   arr.push(item);
-   return arr.shift();
- }
+//  function q(arr, item) {
+//    arr.push(item);
+//    return arr.shift();
+//  }
 
-var testArr = [1, 2, 3, 4, 5];
-console.log("before:" + JSON.stringify(testArr))
-console.log(q(testArr, 6));
-console.log(JSON.stringify(testArr));;  
-      function hehe() {
-        var a = 15;
-        var b = 16;
-        console.log(a);
-        console.log(b);
-        var arr = [1, 2, 3, 4, 5];
-        console.log(typeof(arr[3]));
-        arr[3] = arr[3] + "";
-        console.log(typeof(arr[3]));
-      }
+// var testArr = [1, 2, 3, 4, 5];
+// console.log("before:" + JSON.stringify(testArr))
+// console.log(q(testArr, 6));
+// console.log(JSON.stringify(testArr));;  
+//       function hehe() {
+//         var a = 15;
+//         var b = 16;
+//         console.log(a);
+//         console.log(b);
+//         var arr = [1, 2, 3, 4, 5];
+//         console.log(typeof(arr[3]));
+//         arr[3] = arr[3] + "";
+//         console.log(typeof(arr[3]));
+//       }
 
-      hehe();
+//       hehe();
       //in-line comment
 
+    function fun() {
+        console.log(document.getElementById('haha').value);
+    }
+
+    function checknum() {
+        var a = document.getElementById("ho").value;
+        
+        try {
+            if(a < 100 && a > 10) {
+                document.getElementById("output1").innerHTML = "yes greater";
+                    // for(i = 0; i <= 10; i++) {
+                    //     document.getElementById("output2").innerHTML(i + " ");
+                    // }
+
+                    throw "in between";
+            }
+
+            else {
+
+                document.getElementById("output1").innerHTML = "no, it's not ";
+                throw "bigger or smaller";
+            }
+
+          
+
+        }
+
+        catch(err) {
+            alert( "input is " + err);
+
+        }
+    }
+    
     </script>
     </body>
+
+    
 </html>
